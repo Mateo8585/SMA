@@ -1,0 +1,105 @@
+body {
+  padding: 0.5;
+}
+
+.App {
+  width: 100%;
+  height: 98vh;
+}
+
+.o-contenedorPrincipal {
+  background-color: darkgoldenrod;
+  width: 80em;
+  height: 50em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5em;
+}
+
+.o-contenedorInstrucciones {
+  display: none;
+  visibility: hidden;
+}
+
+/* Para Celular */
+
+@media only screen and (min-width: 320px) and (max-width: 414px) and (orientation: portrait) {
+  .o-contenedorInstrucciones {
+    background-color: #6a9577;
+    visibility: visible;
+    widows: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .o-ImagenRotacion {
+    width: 100%;
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .o-TextoRotacion {
+    margin-top: 3em;
+    width: 100%;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .o-imgR {
+    width: 9em;
+  }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 892px) and (orientation: landscape) {
+  .o-contenedorInstrucciones {
+    display: none;
+  }
+}
+
+/* Para tablets */
+
+@media only screen and (min-width: 600px) and (max-width: 834px) and (orientation: portrait) {
+  .o-contenedorInstrucciones {
+    background-color: #6a9577;
+    visibility: visible;
+    widows: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .o-ImagenRotacion {
+    width: 100%;
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .o-TextoRotacion {
+    margin-top: 3em;
+    width: 100%;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .o-imgR {
+    width: 9em;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) and (orientation: landscape) {
+  .o-contenedorInstrucciones {
+    display: none;
+  }
+}
